@@ -1,5 +1,5 @@
 # Connect all pairs of non-bonded atoms from hydrophobic residues with springs 
-def backbone_hydrophobic(structure, non_bonded):
+def hydrophobic(structure, non_bonded):
   output = []
   atom_resid = [str(atom.residue)[:3] for atom in structure.top.atoms]
   hydrophobic = ['GLY', 'ALA', 'VAL', 'LEU', 'ILE', 'PRO', 'PHE', 'MET', 'TRP']
